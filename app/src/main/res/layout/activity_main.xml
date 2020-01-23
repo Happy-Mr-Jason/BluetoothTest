@@ -5,22 +5,107 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="20dp"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/ivConnect"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/bluetooth_grayicon" />
-    <TextView
-        android:id="@+id/tvConnectedDevice"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="연결된장치"
-        android:textSize="20dp"/>
-    <Button
-        android:id="@+id/btnBluetoothChk"
-        android:layout_width="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnBluetoothChk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="블루투스 연결" />
+
+        <ImageView
+            android:id="@+id/ivConnect"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/bluetooth_grayicon" />
+
+        <TextView
+            android:id="@+id/tvConnectedDevice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="연결된장치"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="블루투스 연결체크"/>
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <Switch
+            android:id="@+id/swRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="LED RED"
+            android:thumb="@drawable/switch_thumb"
+            android:track="@drawable/switch_track_selector" />
+
+        <ImageView
+            android:id="@+id/ivRed"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/light_off" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <Switch
+            android:id="@+id/swGreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="LED GREEN"
+            android:thumb="@drawable/switch_thumb"
+            android:track="@drawable/switch_track_selector" />
+
+        <ImageView
+            android:id="@+id/ivGreen"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/light_off" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <Switch
+            android:id="@+id/swWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="LED WHITE"
+            android:thumb="@drawable/switch_thumb"
+            android:track="@drawable/switch_track_selector" />
+
+        <ImageView
+            android:id="@+id/ivWhite"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/light_off" />
+    </LinearLayout>
+
 </LinearLayout>
